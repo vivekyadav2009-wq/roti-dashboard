@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R.O.T.I Ticket System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>R.O.T.I Ticket Dashboard</h1>
+        <button id="login-btn">Login with Discord</button>
+    </header>
+
+    <main>
+        <section id="server-selection">
+            <h2>Select a Server</h2>
+            <select id="server-list">
+                <option>Loading...</option>
+            </select>
+        </section>
+
+        <section id="ticket-settings">
+            <h2>Manage Ticket System</h2>
+            <label>
+                <input type="checkbox" id="enable-tickets"> Enable Ticket System
+            </label>
+            <label>
+                <input type="text" id="ticket-category" placeholder="Category Name">
+            </label>
+            <button id="save-settings">Save Settings</button>
+        </section>
+
+        <section id="copy-settings">
+            <h2>Copy Ticket System</h2>
+            <button id="copy-ticket">Copy Ticket Setup to Another Server</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
